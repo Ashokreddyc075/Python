@@ -1,0 +1,25 @@
+Q)write a programe to enter name and marks in a dictionary and display information on the screen?
+d = { }
+while True:
+    name = input("Enter name:")
+    marks = int(input("Enter student Marks:"))
+    d[name] = [marks]
+    print("Student marks insterd sucessfully")
+    option = input("Do you want to insert more records [yes/no]")
+    while True:
+        if option.lower() == 'no':
+            option = 'no'
+            break
+        elif option.lower() =='yes':
+            break
+        else:
+            option = input("you are entered option is invalid choose correct one")
+    if option == 'no':
+        break
+print("Name\t\tmarks")
+print('#'*20)
+for x in d:
+	print('{}\t\t{}'.format(x,d[x]))
+print('#'*20)
+
+ 
