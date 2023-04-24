@@ -1,3 +1,53 @@
+Dict:
+====
+it represents {key1:value1,key2:value2,....}
+duplicate keys are not allowed but duplicate values are allowed.
+indexing and slicing keys are not applicable.
+dict is growble.
+if we are trying to add key value pair but key alredy present then old key replaced by new.
+
+UPDATE DICT:
+==========
+d = {'ashok':100,'ganesh':200,'suresh':300}
+#I have added a new key-value pair to the dictionaryir
+d['babu']=400
+#C:\Users\reddy>python D:\Python\sample.py
+{'ashok': 100, 'ganesh': 200, 'suresh': 300, 'babu': 400}
+#The value of the key "ashok" has been replaced with 500.
+d['ashok'] = 500
+print(d) 
+
+Delete element from dict:
+========================
+if the specified key is available then the entry will be delete.
+if thr specified key not available it will retun key value error
+d = {100:'a',200:'c',300:'d'}
+del d[100]
+print(d)
+C:\Users\reddy>python D:\Python\sample.py
+{200: 'c', 300: 'd'}
+
+To remove all elements:
+======================
+d.clear()
+d = {100:'a',200:'c',300:'d'}
+d.clear()
+print(d)
+C:\Users\reddy>python D:\Python\sample.py
+{}
+
+Q.The difference between del and clear?
+del is not return any empty dict.
+clear() returns and empty dict.
+
+
+
+
+
+
+
+
+
 Q)write a programe to enter name and marks in a dictionary and display information on the screen?
 d = { }
 while True:
